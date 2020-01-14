@@ -1,0 +1,265 @@
+@font-face {
+  src: url('../fonts/Novecento WideLight.otf');
+
+  font-family: 'Novecento';
+  font-weight: lighter;
+}
+@font-face {
+  src: url('../fonts/Novecento WideMedium.otf');
+  font-weight: medium;
+  font-family: 'Novecento';
+}
+@font-face {
+  src: url('../fonts/Novecento WideNormal.otf');
+  font-family: 'Novecento';
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* устанавливаем  сбрасываем стили для всех тегов  */
+div {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1f0832;
+  font-family: 'Novecento', sans-serif;
+  font-weight: lighter;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.container {
+  border: 2px solid rgb(248, 5, 155);
+}
+
+[class^='col'] {
+  outline: 1px solid red;
+}
+
+/* ===============верстка header========================*/
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 2000px;
+  height: 2900px;
+  border: 1px solid red;
+  background-image: url('../img/bg_header.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* --------------верхнее меню хедер------------- */
+.header_logo-text {
+  vertical-align: middle;
+  font-size: 2.7rem;
+  margin-left: 5px;
+}
+
+.header-top-nav {
+  margin: 0 -160px;
+  height: 100px;
+}
+
+.header_ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.header_li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.header_li a {
+  cursor: pointer;
+
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.555);
+}
+
+.header_li::after {
+  position: absolute;
+  display: block;
+  width: 0%;
+  content: '';
+  border-bottom: 2px solid#ffff;
+  top: 100%;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.header_li:hover::after {
+  width: 100%;
+  transform: scale(1);
+}
+
+.header_li:hover a {
+  color: #ffff;
+}
+
+.header-cotial_nav {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.header-cotial_nav i {
+  transition: 0.5s;
+}
+
+.header-cotial_nav i:hover {
+  color: rgba(255, 255, 255, 0.26);
+}
+
+/*---------------- заголовок хедера---------------- */
+.section-header-title {
+  height: 850px;
+}
+
+.header-title {
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.header-title_h1 {
+  border: 1px solid #000;
+  margin-top: 170px;
+  font-size: 7.2rem;
+  word-wrap: none;
+  white-space: nowrap;
+}
+
+.header-title_p {
+  border: 1px solid #000;
+  margin: 50px 0px;
+  font-size: 1.8rem;
+}
+
+.header-title_button {
+  min-width: 160px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #ffff;
+  border: 1px solid rgb(238, 229, 229);
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: 1px solid transparent;
+}
+
+.header-title_button:hover {
+  color: rgba(255, 255, 255, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.header-title_link {
+  position: relative;
+  margin-left: 10px;
+  color: #ffff;
+  transition: 0.5s;
+}
+
+.header-title_link::after {
+  position: absolute;
+  display: block;
+  width: 0%;
+  content: '';
+  border-bottom: 2px solid#ffff;
+  top: 100%;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.header-title_link:hover::after {
+  width: 100%;
+  transform: translate(1%);
+}
+
+.header-title_arrow {
+  margin: 15px 0px;
+  cursor: pointer;
+}
+
+/* ------------верстkа tools */
+.section-tools {
+  height: 400px;
+}
+.tools-title {
+  text-align: center;
+}
+.tools-h2 {
+  margin-top: 130px;
+  font-size: 4.8rem;
+}
+
+.tools-p {
+  border: 1px solid #000;
+  margin: 50px 0px;
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.tools {
+  text-align: center;
+}
+
+/* .header_container-slider {
+  border: 1px solid rgb(208, 255, 0);
+} */
+
+.tools-box {
+}
+
+.header_sliders {
+  width: 1140px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 255, 170);
+  display: flex;
+  align-items: center;
+}
+
+.header_slider-div {
+  width: 100px;
+
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.slider-img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  /* font-family: 'Novecento', sans-serif;
+  font-weight: lighter; */
+}
