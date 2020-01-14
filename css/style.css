@@ -48,26 +48,25 @@ body {
   padding: 0px;
   background-color: #1f0832;
   font-family: 'Novecento', sans-serif;
-  font-weight: lighter;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 1.6rem;
   color: white;
 }
 
 .container {
-  border: 2px solid rgb(248, 5, 155);
+  /* border: 2px solid rgb(248, 5, 155); */
 }
 
 [class^='col'] {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* ===============верстка header========================*/
 .header {
   display: flex;
   margin: 0 auto;
-  width: 2000px;
+  max-width: 2000px;
   height: 2900px;
   border: 1px solid red;
   background-image: url('../img/bg_header.png');
@@ -145,12 +144,10 @@ body {
 }
 
 .header-title {
-  border: 1px solid #000;
   text-align: center;
 }
 
 .header-title_h1 {
-  border: 1px solid #000;
   margin-top: 170px;
   font-size: 7.2rem;
   word-wrap: none;
@@ -158,7 +155,6 @@ body {
 }
 
 .header-title_p {
-  border: 1px solid #000;
   margin: 50px 0px;
   font-size: 1.8rem;
 }
@@ -208,7 +204,7 @@ body {
   cursor: pointer;
 }
 
-/* ------------верстkа tools */
+/* ------------блок с заголовком tools */
 .section-tools {
   height: 400px;
 }
@@ -221,26 +217,88 @@ body {
 }
 
 .tools-p {
-  border: 1px solid #000;
   margin: 50px 0px;
   font-size: 2.2rem;
   color: rgba(255, 255, 255, 0.39);
 }
-
-.tools {
+/* -----------------блоки с градиентом внутри иконки */
+.tools-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 33.33%;
+  height: 250px;
   text-align: center;
 }
 
-/* .header_container-slider {
-  border: 1px solid rgb(208, 255, 0);
-} */
-
-.tools-box {
+.tools-box_img {
+  margin-top: 40px;
 }
 
+.tools-box:nth-child(1) {
+  background: linear-gradient(40deg, #0081b2, #1bbcbd);
+}
+
+.tools-box:nth-child(2) {
+  background: linear-gradient(40deg, #a01080, #df0360);
+}
+
+.tools-box:nth-child(3) {
+  background: linear-gradient(40deg, #570084, #7f058d);
+}
+
+.tool-box_p {
+  flex-basis: 100%;
+  font-size: 3.6rem;
+}
+/* ---------------блоки с нижним бордером градиентом */
+.tool-description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+  width: 33.33%;
+  height: 200px;
+  text-align: center;
+}
+.tool-description:nth-child(1) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #0081b2, #1bbcbd) 47% 0%;
+}
+.tool-description:nth-child(2) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #a01080, #df0360) 47% 0%;
+}
+
+.tool-description:nth-child(3) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #570084, #7f058d) 47% 0%;
+}
+
+.tool-description_p {
+  padding: 30px;
+  text-transform: lowercase;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.tool-description_p::first-letter {
+  text-transform: uppercase;
+}
 .header_sliders {
-  width: 1140px;
-  height: 300px;
+  /* width: 1140px; */
+  height: 200px;
   margin: 0 auto;
   border: 1px solid rgb(0, 255, 170);
   display: flex;
@@ -249,8 +307,7 @@ body {
 
 .header_slider-div {
   width: 100px;
-
-  margin: 10px;
+  margin: 70px;
   border: 1px solid red;
 }
 
