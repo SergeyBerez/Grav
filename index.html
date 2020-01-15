@@ -50,7 +50,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div
-            class="col-xl-9 d-flex flex-wrap  justify-content-center section-header-title "
+            class="col-12 col-xl-9 d-flex flex-wrap  justify-content-center section-header-title "
           >
             <div class="header-title">
               <h1 class="header-title_h1">
@@ -72,7 +72,7 @@
         <!-- заголовок tools -->
         <div class="row justify-content-center">
           <div
-            class="col-xl-9 d-flex flex-wrap  align-items-center section-tools"
+            class="col-12 col-xl-9 d-flex flex-wrap  align-items-center section-tools"
           >
             <div class="tools-title">
               <h2 class="tools-h2">just quick steps</h2>
@@ -83,7 +83,7 @@
             </div>
           </div>
           <!-- 3 дива  с  заливкой градиент -->
-          <div class="col-xl-12 d-flex ">
+          <div class="col-xl-12 d-flex">
             <div class="tools-box">
               <img class="tools-box_img" src="img/icon_start.svg" alt="" />
               <p class="tool-box_p">Install</p>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <!--3 div с текстом внизу бордер градиент -->
-          <div class="col-xl-12  d-flex  ">
+          <div class="col-12 col-xl-12  d-flex ">
             <div class="tool-description">
               <p class="tool-description_p">
                 In a nutshell, installing Grav is a matter of unzipping the file
@@ -121,7 +121,7 @@
           <!---------------------- секция со слайдом ------------------>
           <!-- заголовок  для блока со слайдерами с текстом внизу  стиль повторяетя из заговка секция особеннтси tools-->
 
-          <div class="col-xl-9 d-flex flex-wrap  align-items-center">
+          <div class="col-10 col-xl-9 d-flex flex-wrap  align-items-center">
             <div class="tools-title">
               <h2 class="tools-h2">just quick steps</h2>
               <p class="tools-p">
@@ -131,9 +131,9 @@
             </div>
           </div>
 
-          <!-- слайдер -->
+          <!-- слайдер секции tools-->
 
-          <div class="col-xl-12">
+          <div class="col-10 col-xl-12">
             <div class="header_sliders">
               <div class="header_slider-div">
                 <img class="slider-img" src="img/slide_header1.png" alt="" />
@@ -161,23 +161,9 @@
               </div>
             </div>
           </div>
-          <div class="col-2 col-xl-2 mx-auto">
+          <div class="col-4 col-xl-2 mx-auto">
             <button class=" header-title_button">view templates</button>
           </div>
-
-          <!-- <div class="col-xl-12">
-            <div class="mains_sliders">
-              <div class="header_slider-div ">
-                <img class="slider-img" src="img/macbook.png" alt="macbook" />
-              </div>
-              <div class="header_slider-div ">
-                <img class="slider-img" src="img/macbook.png" alt="macbook" />
-              </div>
-              <div class="header_slider-div ">
-                <img class="slider-img" src="img/macbook.png" alt="macbook" />
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </header>
@@ -187,14 +173,19 @@
       <div class="container">
         <div class="row">
           <!-- задаем  section-main-title серо- белый фон и ширину на весь контейнер -->
-          <div class="col-xl-12 section-main-title">
+          <div class="col-12 mx-auto col-xl-12 section-main-title">
             <!-- вставляем еще один ряд  row -->
             <div class="row justify-content-center">
-              <div class="col-xl-9 d-flex flex-wrap  justify-content-center ">
+              <!-- линия градиентная загловке -->
+              <div class="col-12 col-xl-12 main-line-top"></div>
+              <!-- секция заголовка блока main -->
+              <div
+                class="col-12 col-xl-8 d-flex flex-wrap justify-content-center "
+              >
                 <div class="main-title">
-                  <p class="main-title_h1">
+                  <h2 class="main-title_h2">
                     super approachable
-                  </p>
+                  </h2>
                   <p class="main-title_p">
                     The Grav admin has been build to be as simple as possible
                     while still providing the functionality needed to use your
@@ -205,35 +196,78 @@
                   </button>
                 </div>
               </div>
-              <div class="w-100"></div>
-              <!-- слайдер макбук -->
-              <div class="col-xl-12">
+
+              <!-- слайдер макбук  блока main-->
+              <div class="col-10 col-xl-10">
                 <div class="mains_sliders">
                   <div class="header_slider-div ">
                     <img
-                      class="slider-img"
+                      class="main-slider-img"
+                      src="img/macbook.png"
+                      alt="macbook"
+                    />
+                  </div>
+                  <div class="main-slider-div ">
+                    <img
+                      class="main-slider-img"
                       src="img/macbook.png"
                       alt="macbook"
                     />
                   </div>
                   <div class="header_slider-div ">
                     <img
-                      class="slider-img"
-                      src="img/macbook.png"
-                      alt="macbook"
-                    />
-                  </div>
-                  <div class="header_slider-div ">
-                    <img
-                      class="slider-img"
+                      class="main-slider-img"
                       src="img/macbook.png"
                       alt="macbook"
                     />
                   </div>
                 </div>
               </div>
+              <!-- конец верстки следера macbook -->
+              <!-- 4 дива  рекламы под слайдером -->
+              <div class="col-xl-12 line-grey"></div>
+              <div class="col-xl-10 d-flex flex-wrap flex-xl-nowrap align-items-center main-offers">
+                
+                <div class="block-offers">
+                  <img src="img/icon_bl_main1.png" alt="" class="offers-ico" />
+                  <h3 class="block-offers_h3">crazy fast</h3>
+                  <p class="block-offers_p">
+                    Performance is not just an afterthought, we baked it in from
+                    the start.
+                  </p>
+                </div>
+                <div class="block-offers">
+                  <img src="img/icon_bl_main2.png" alt="" class="offers-ico" />
+                  <h3 class="block-offers_h3">easy to work with</h3>
+                  <p class="block-offers_p">
+                    Grav is a NoDB solution, it uses simple Markdown text files
+                    to make things easy.
+                  </p>
+                </div>
+                <div class="block-offers">
+                  <img src="./img/icon_bl_main3.png" alt="" class="offers-ico" />
+                  <h3 class="block-offers_h3">unlimited extensibility</h3>
+                  <p class="block-offers_p">
+                    Grav has a powerful API and sophisticated Package Manager to
+                    make it super flexible.
+                  </p>
+                </div>
+                <div class="block-offers">
+                  <img src="./img/icon_bl_main4.png" alt="" class="offers-ico" />
+                  <h3 class="block-offers_h3">free and open</h3>
+                  <p class="block-offers_p">
+                    Grav is Open Source, and all the code is avaible on
+                    <a class="header-title_link offers-link_color" href="#"> GitHub.com.</a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- 2секция с логотипом и кнопкойб блок main -->
+          <div class="col-xl-12"></div>
+          <!-- 3секция с круглыми дивами с кодом и кнопкой бблок main -->
+          <div class="col-xl-12"></div>
         </div>
       </div>
     </main>
