@@ -328,23 +328,24 @@ body {
   display: block;
   margin: 0 auto;
 }
-/* ===========================блок main */
+/* ===========================блок main =================*/
 
 .main {
   max-width: 2000px;
   min-height: 2500px;
   margin: 0 auto;
-  background-color: #99949b;
+  background-color: rgb(247, 244, 248);
 }
 .main-line-top {
   height: 5px;
-  background: linear-gradient(#df0362, #641ca1);
+  background: linear-gradient(#df0362, #641c9e);
 }
 .section-main-title {
   margin-top: -270px;
-  /* height: 1500px; */
-  background-color: #ede5f0;
+  box-shadow: 0px 5px 25px 15px rgba(25, 6, 41, 0.1);
+  background-color: rgb(255, 255, 255);
 }
+
 .main-title {
   text-align: center;
 }
@@ -375,7 +376,6 @@ body {
 /* ------слайдер главного блока macbook */
 .main_sliders {
   margin: 0 auto;
-
   display: flex;
   align-items: center;
 }
@@ -385,15 +385,11 @@ body {
   display: block;
   margin: 0 auto;
 }
-/* блок с предлжениями под сладером */
+/* ---------блок с предлжениями под сладером 4 блока */
 .line-grey {
   width: 100%;
   height: 2px;
   background: gray;
-}
-
-.main-offers {
-  text-align: center;
 }
 .block-offers {
   padding: 5px;
@@ -415,4 +411,174 @@ body {
 }
 .offers-link_color {
   color: #a01082;
+}
+/* ----------- блок developers середина блока main */
+.developers-logo {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.developers-title {
+  text-align: center;
+}
+.developers-title_h2 {
+  margin-top: 90px;
+  font-size: 7.2rem;
+  color: #a01082;
+  word-wrap: break-word;
+}
+
+.developers-title_p {
+  margin: 80px 0px;
+  font-weight: lighter;
+  font-size: 2.2rem;
+  color: #7a747e;
+}
+.developers-title_button {
+  width: 200px;
+  margin-bottom: 60px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  border: 1px solid #a01080;
+  background-color: transparent;
+  color: #a01080;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.block-eclips {
+  max-width: 2000px;
+  background-color: rgb(255, 255, 255);
+}
+.box-eclips {
+  margin: 30px;
+  padding: 10px;
+}
+
+.img-eclips {
+  margin-top: 50px;
+  /* display: block; */
+}
+.line-eclips {
+  margin: 30px auto;
+  width: 100px;
+  height: 2px;
+  background: #efecf2;
+  /* position: relative; */
+}
+
+/* --------------------pink block community driven */
+.community {
+  max-width: 2000px;
+  background: linear-gradient(40deg, #a01080, #df0360);
+}
+.community-text--color {
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
+}
+.community-icon-link {
+  display: block;
+  margin: 20px 50px;
+}
+.community-block {
+  margin-bottom: 100px;
+}
+/* =============================footer секция */
+.footer {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: rgb(25, 6, 41);
+}
+/* 1 секция футера */
+.box-features {
+  margin: 10px;
+}
+.img-features {
+  width: 100%;
+}
+.features-h3 {
+  margin-top: 50px;
+  position: relative;
+  font-size: 2.2rem;
+}
+.features-h3::after {
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 2px;
+  content: '';
+  background: #8f88a8;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 60px;
+  transition: 0.5s;
+}
+
+.features-p {
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.39);
+}
+
+/* 3 дива полоски градиента между секциями */
+.features-gradient-box {
+  margin-top: 100px;
+}
+
+.features-gradient {
+  display: flex;
+  width: 33.3%;
+  margin: 5px;
+}
+.features-gradient:nth-child(1) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #0081b2, #1bbcbd) 47% 0%;
+}
+.features-gradient:nth-child(2) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #a01080, #df0360) 47% 0%;
+}
+
+.features-gradient:nth-child(3) {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(40deg, #570084, #7f058d) 47% 0%;
+}
+/* -----------2 секция футера стили повторяются здесь модификаторы */
+.block-commets--h3 {
+  margin-top: 20px;
+  color: #ffff;
+  font-size: 1.6rem;
+}
+.commemts--link {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.block-commets--p {
+  color: rgba(255, 255, 255, 0.39);
+}
+
+.comments-line--blue {
+  background: linear-gradient(40deg, #0081b2, #1bbcbd);
+}
+.comments-line--pink {
+  background: linear-gradient(40deg, #a01080, #df0360);
+}
+.comments-line--purple {
+  background: linear-gradient(40deg, #570084, #7f058d);
+}
+
+.footer-line--gradient {
+  margin-top: 100px;
 }
