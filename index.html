@@ -14,41 +14,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="row header-top-nav  align-items-center">
-          <div class="col-xl-2 header_logo ">
-            <img src="img/logo.svg" alt="" /><span class=" header_logo-text"
-              >grav</span
-            >
-          </div>
-          <div class="col-xl-4 mx-auto">
-            <nav class="header-nav">
-              <ul class="header_ul">
-                <li class="header_li"><a href="#">tour</a></li>
-                <li class="header_li"><a href="#">templates </a></li>
-                <li class="header_li"><a href="#"> blog </a></li>
-                <li class="header_li"><a href="#">forum </a></li>
-                <li class="header_li"><a href="#">downloads </a></li>
-                <li class="header_li"><a href="#"> learn </a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-xl-2 d-flex justify-content-end">
-            <a class="header-cotial_nav">
-              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-            <a class="header-cotial_nav">
-              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-            </a>
-            <a class="header-cotial_nav">
-              <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i
-            ></a>
-            <div class="header-cotial"></div>
-          </div>
+      <!-- top header ширина 1400 px, контент по макету выходит за рамки контейнера   -->
+      <div class="header-top-nav">
+        <div class="header_logo ">
+          <img src="img/logo.svg" alt="" /><span class=" header_logo-text"
+            >grav</span
+          >
         </div>
-        <!-- ------------------заголовок  -->
+
+        <nav class="header-nav">
+          <ul class="header_ul">
+            <li class="header_li"><a href="#">tour</a></li>
+            <li class="header_li"><a href="#">templates </a></li>
+            <li class="header_li"><a href="#"> blog </a></li>
+            <li class="header_li"><a href="#">forum </a></li>
+            <li class="header_li"><a href="#">downloads </a></li>
+            <li class="header_li"><a href="#"> learn </a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cotial">
+          <a class="header-cotial_nav">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+          <a class="header-cotial_nav">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+          <a class="header-cotial_nav">
+            <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i
+          ></a>
+          <div class="header-cotial"></div>
+        </div>
+      </div>
+      <!-- ------------------секция заголовок  header с bootstrap container------------------->
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-xl-8 mx-auto section-header-title ">
+          <div
+            class="col-xl-9 d-flex flex-wrap  justify-content-center section-header-title "
+          >
             <div class="header-title">
               <h1 class="header-title_h1">
                 say hello to <strong>grav</strong>
@@ -59,15 +62,15 @@
               </p>
               <button class="header-title_button">get grav</button>
             </div>
-          </div>
-          <div class="col-xl-5 d-flex">
-            <div class=" mx-auto header-title_arrow ">
+            <div class="w-100"></div>
+            <div class="mt-xl-auto header-title_arrow ">
               <img src="img/arrow.png" alt="" />
             </div>
           </div>
         </div>
-        <!-- ----------секция особеннтси tools  -->
-        <div class="row justify-content-center a">
+        <!-- --------------------секция особеннтси tools  ----------------->
+        <!-- заголовок tools -->
+        <div class="row justify-content-center">
           <div
             class="col-xl-9 d-flex flex-wrap  align-items-center section-tools"
           >
@@ -79,7 +82,7 @@
               </p>
             </div>
           </div>
-          <!-- 3 дива цветных  -->
+          <!-- 3 дива  с  заливкой градиент -->
           <div class="col-xl-12 d-flex ">
             <div class="tools-box">
               <img class="tools-box_img" src="img/icon_start.svg" alt="" />
@@ -94,7 +97,7 @@
               <p class="tool-box_p">Maintain</p>
             </div>
           </div>
-          <!-- 3дива с текстор внизу бордер -->
+          <!--3 div с текстом внизу бордер градиент -->
           <div class="col-xl-12  d-flex  ">
             <div class="tool-description">
               <p class="tool-description_p">
@@ -115,9 +118,10 @@
               </p>
             </div>
           </div>
-          <!-- заголовок слайдера дива с текстор внизу бордер  стиль повторяетя -->
+          <!---------------------- секция со слайдом ------------------>
+          <!-- заголовок  для блока со слайдерами с текстом внизу  стиль повторяетя из заговка секция особеннтси tools-->
 
-          <div class="col-xl-8 d-flex flex-wrap  align-items-center">
+          <div class="col-xl-9 d-flex flex-wrap  align-items-center">
             <div class="tools-title">
               <h2 class="tools-h2">just quick steps</h2>
               <p class="tools-p">
@@ -126,39 +130,113 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="col-xl-12">
-          <div class="header_sliders">
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header1.png" alt="" />
-            </div>
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header2.png" alt="" />
-            </div>
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header3.png" alt="" />
-            </div>
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header1.png" alt="" />
-            </div>
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header2.png" alt="" />
-            </div>
-            <div class="header_slider-div">
-              <img class="slider-img" src="img/slide_header3.png" alt="" />
+          <!-- слайдер -->
+
+          <div class="col-xl-12">
+            <div class="header_sliders">
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header1.png" alt="" />
+                <p>Landing Pages</p>
+              </div>
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header2.png" alt="" />
+                <p>Portfolios</p>
+              </div>
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header3.png" alt="" />
+                <p>Blogs</p>
+              </div>
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header1.png" alt="" />
+                <p>Landing Pages</p>
+              </div>
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header2.png" alt="" />
+                <p>Landing Pages</p>
+              </div>
+              <div class="header_slider-div">
+                <img class="slider-img" src="img/slide_header3.png" alt="" />
+                <p>Landing Pages</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-xl-2 mx-auto">
-          <button class=" header-title_button">getffggfgf grav</button>
+          <div class="col-2 col-xl-2 mx-auto">
+            <button class=" header-title_button">view templates</button>
+          </div>
+
+          <!-- <div class="col-xl-12">
+            <div class="mains_sliders">
+              <div class="header_slider-div ">
+                <img class="slider-img" src="img/macbook.png" alt="macbook" />
+              </div>
+              <div class="header_slider-div ">
+                <img class="slider-img" src="img/macbook.png" alt="macbook" />
+              </div>
+              <div class="header_slider-div ">
+                <img class="slider-img" src="img/macbook.png" alt="macbook" />
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </header>
 
-    <!-- 
-   
-     -->
+    <!-- ===========================блок main =====================-->
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <!-- задаем  section-main-title серо- белый фон и ширину на весь контейнер -->
+          <div class="col-xl-12 section-main-title">
+            <!-- вставляем еще один ряд  row -->
+            <div class="row justify-content-center">
+              <div class="col-xl-9 d-flex flex-wrap  justify-content-center ">
+                <div class="main-title">
+                  <p class="main-title_h1">
+                    super approachable
+                  </p>
+                  <p class="main-title_p">
+                    The Grav admin has been build to be as simple as possible
+                    while still providing the functionality needed to use your
+                    site on a day-to-day basis.
+                  </p>
+                  <button class="main-title_button">
+                    get grav
+                  </button>
+                </div>
+              </div>
+              <div class="w-100"></div>
+              <!-- слайдер макбук -->
+              <div class="col-xl-12">
+                <div class="mains_sliders">
+                  <div class="header_slider-div ">
+                    <img
+                      class="slider-img"
+                      src="img/macbook.png"
+                      alt="macbook"
+                    />
+                  </div>
+                  <div class="header_slider-div ">
+                    <img
+                      class="slider-img"
+                      src="img/macbook.png"
+                      alt="macbook"
+                    />
+                  </div>
+                  <div class="header_slider-div ">
+                    <img
+                      class="slider-img"
+                      src="img/macbook.png"
+                      alt="macbook"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script

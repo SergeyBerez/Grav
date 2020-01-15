@@ -7,4 +7,9 @@ $(function() {
     dots: true,
     infinite: true,
   });
+
+  $('.mains_sliders').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 });
