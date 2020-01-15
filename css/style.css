@@ -177,7 +177,7 @@ body {
 
 .header-title_button {
   min-width: 160px;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: transparent;
   color: #ffff;
   border: 1px solid rgb(238, 229, 229);
@@ -365,10 +365,12 @@ body {
 
 .main-title_button {
   width: 200px;
-  border-radius: 20px;
+  border-radius: 30px;
+  border: none;
   color: #ffff;
   margin-bottom: 60px;
   padding: 10px 0px;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: 0.5s;
   background: linear-gradient(40deg, #a01080, #df0360);
@@ -438,7 +440,7 @@ body {
   width: 200px;
   margin-bottom: 60px;
   padding: 10px 0px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 1px solid #a01080;
   background-color: transparent;
   color: #a01080;
@@ -570,15 +572,41 @@ body {
 }
 
 .comments-line--blue {
+  width: 50px;
   background: linear-gradient(40deg, #0081b2, #1bbcbd);
 }
 .comments-line--pink {
+  width: 50px;
   background: linear-gradient(40deg, #a01080, #df0360);
 }
 .comments-line--purple {
+  width: 50px;
   background: linear-gradient(40deg, #570084, #7f058d);
 }
 
 .footer-line--gradient {
-  margin-top: 100px;
+  margin: 60px auto;
+}
+.footer--button {
+  width: 130px;
+}
+.box-footer {
+  border: 1px solid rgb(241, 5, 5);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+
+.footer-p {
+  line-height: 3rem;
+  text-transform: lowercase;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.39);
+  border: 1px solid rgb(253, 8, 8);
+}
+span {
+  color: #ffff;
 }
