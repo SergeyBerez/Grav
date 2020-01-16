@@ -108,12 +108,13 @@ body {
 .header_li::after {
   position: absolute;
   display: block;
-  width: 0%;
+  width: 100%;
   content: '';
   border-bottom: 2px solid#ffff;
   top: 100%;
   left: 0px;
   transition: 0.5s;
+  transform: scale(0);
 }
 
 .header_li:hover::after {
@@ -681,9 +682,9 @@ body {
   }
 
   .header-title_p {
-  margin: 20px 0px;
-  font-size: 1.3rem;
-}
+    margin: 20px 0px;
+    font-size: 1.3rem;
+  }
 
   .header_logo {
     padding-top: 20px;
