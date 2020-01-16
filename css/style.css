@@ -1,18 +1,12 @@
 @font-face {
-  src: url('../fonts/Novecento WideLight.otf');
-
-  font-family: 'Novecento';
-  font-weight: lighter;
-}
-@font-face {
   src: url('../fonts/Novecento WideMedium.otf');
   font-weight: medium;
   font-family: 'Novecento';
 }
 @font-face {
-  src: url('../fonts/Novecento WideNormal.otf');
+  src: url('../fonts/Novecento WideLight.otf');
   font-family: 'Novecento';
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 html {
@@ -52,14 +46,14 @@ body {
   padding: 0px;
   background-color: #282829;
   font-family: 'Novecento', sans-serif;
-  font-weight: normal;
+  font-weight: medium;
   text-transform: lowercase;
   font-size: 1.6rem;
   color: white;
 }
 
 .container {
-  border: 2px solid rgb(248, 5, 155);
+  /* border: 2px solid rgb(248, 5, 155); */
 }
 
 [class^='col'] {
@@ -249,6 +243,7 @@ body {
 }
 
 .tools-box_img {
+  max-width: 70px;
   margin-top: 40px;
 }
 
@@ -470,7 +465,7 @@ body {
   /* position: relative; */
 }
 
-/* --------------------pink block community driven */
+/* --------------------pink block community driven  модификатор и стили в верстке повтряются */
 .community {
   max-width: 2000px;
   background: linear-gradient(40deg, #a01080, #df0360);
@@ -557,7 +552,7 @@ body {
   border-bottom: 5px solid;
   border-image: linear-gradient(40deg, #570084, #7f058d) 47% 0%;
 }
-/* -----------2 секция футера стили повторяются здесь модификаторы */
+/* -----------2 секция футера блок с клиентами отзывы стили в верстке повтряются модификаторы */
 .block-commets--h3 {
   margin-top: 20px;
   color: #ffff;
@@ -591,7 +586,6 @@ body {
   width: 130px;
 }
 .box-footer {
-  border: 1px solid rgb(241, 5, 5);
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -605,8 +599,37 @@ body {
   text-transform: lowercase;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.39);
-  border: 1px solid rgb(253, 8, 8);
 }
-span {
+.footer-span {
   color: #ffff;
+}
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+    background-color: #190629;
+  }
+  .header-title_h1 {
+    font-size: 3.2rem;
+  }
+
+  [class*='h2'] {
+    font-size: 3rem;
+  }
+  .tools-p {
+    font-size: 1.3rem;
+  }
+  .tools-box_img {
+  max-width: 40px;
+  
+}
+.tool-box_p {
+  /* flex-basis: 100%; */
+  font-size: 2rem;
+}
+.tool-description_p {
+  /* padding: 30px; */
+  text-transform: lowercase;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.39);
+}
 }
