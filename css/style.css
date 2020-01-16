@@ -52,14 +52,6 @@ body {
   color: white;
 }
 
-.container {
-  /* border: 2px solid rgb(248, 5, 155); */
-}
-
-[class^='col'] {
-  /* outline: 1px solid red; */
-}
-
 /* ===============верстка секция header========================*/
 .header {
   margin: 0 auto;
@@ -87,13 +79,13 @@ body {
   margin: 0 auto;
   max-width: 1400px;
   height: 100px;
+  padding: 0 10px;
 }
-.header_logo {
-  /* margin: 0 auto; */
-}
+
 .header-nav {
   margin: 0 auto;
 }
+
 .header_ul {
   display: flex;
   justify-content: space-around;
@@ -108,7 +100,6 @@ body {
 
 .header_li a {
   cursor: pointer;
-
   transition: 0.5s;
   color: rgba(255, 255, 255, 0.555);
 }
@@ -132,9 +123,7 @@ body {
 .header_li:hover a {
   color: #ffff;
 }
-.header-cotial {
-  /* margin-left: auto; */
-}
+
 .header-cotial_nav {
   cursor: pointer;
   margin: 0 10px;
@@ -150,7 +139,7 @@ body {
 
 /*---------------- заголовок хедера---------------- */
 .section-header-title {
-  height: 900px;
+  height: 840px;
 }
 
 .header-title {
@@ -263,6 +252,7 @@ body {
   flex-basis: 100%;
   font-size: 3.6rem;
 }
+
 /* ---------------блоки с нижним бордером градиентом */
 .tool-description {
   display: flex;
@@ -273,6 +263,7 @@ body {
   height: 200px;
   text-align: center;
 }
+
 .tool-description:nth-child(1) {
   border-left: none;
   border-right: none;
@@ -280,6 +271,7 @@ body {
   border-bottom: 5px solid;
   border-image: linear-gradient(40deg, #0081b2, #1bbcbd) 47% 0%;
 }
+
 .tool-description:nth-child(2) {
   border-left: none;
   border-right: none;
@@ -302,6 +294,7 @@ body {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.39);
 }
+
 .tool-description_p::first-letter {
   text-transform: uppercase;
 }
@@ -323,6 +316,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+
 /* ===========================блок main =================*/
 
 .main {
@@ -331,10 +325,12 @@ body {
   margin: 0 auto;
   background-color: rgb(247, 244, 248);
 }
+
 .main-line-top {
   height: 5px;
-  background: linear-gradient(#df0362, #641c9e);
+  background: linear-gradient(-90deg, #df0362, #641c9e);
 }
+
 .section-main-title {
   margin-top: -270px;
   box-shadow: 0px 5px 25px 15px rgba(25, 6, 41, 0.1);
@@ -376,18 +372,21 @@ body {
   display: flex;
   align-items: center;
 }
+
 .main-slider-img {
   width: 100%;
   padding: 10px;
   display: block;
   margin: 0 auto;
 }
+
 /* ---------блок с предлжениями под сладером 4 блока */
 .line-grey {
   width: 100%;
   height: 2px;
   background: gray;
 }
+
 .block-offers {
   padding: 5px;
 }
@@ -395,10 +394,12 @@ body {
   margin-top: 40px;
   width: 50px;
 }
+
 .block-offers_h3 {
   margin-top: 40px;
   color: #190629;
 }
+
 .block-offers_p {
   line-height: 3rem;
   margin-top: 20px;
@@ -406,9 +407,11 @@ body {
   color: #282828;
   font-size: 1.3rem;
 }
+
 .offers-link_color {
   color: #a01082;
 }
+
 /* ----------- блок developers середина блока main */
 .developers-logo {
   margin-top: 100px;
@@ -418,6 +421,7 @@ body {
 .developers-title {
   text-align: center;
 }
+
 .developers-title_h2 {
   margin-top: 90px;
   font-size: 7.2rem;
@@ -431,6 +435,7 @@ body {
   font-size: 2.2rem;
   color: #7a747e;
 }
+
 .developers-title_button {
   width: 200px;
   margin-bottom: 60px;
@@ -439,7 +444,6 @@ body {
   border: 1px solid #a01080;
   background-color: transparent;
   color: #a01080;
-
   cursor: pointer;
   transition: 0.5s;
 }
@@ -448,6 +452,7 @@ body {
   max-width: 2000px;
   background-color: rgb(255, 255, 255);
 }
+
 .box-eclips {
   margin: 30px;
   padding: 10px;
@@ -457,6 +462,7 @@ body {
   margin-top: 50px;
   /* display: block; */
 }
+
 .line-eclips {
   margin: 30px auto;
   width: 100px;
@@ -470,14 +476,17 @@ body {
   max-width: 2000px;
   background: linear-gradient(40deg, #a01080, #df0360);
 }
+
 .community-text--color {
   margin-top: 100px;
   color: rgb(255, 255, 255);
 }
+
 .community-icon-link {
   display: block;
   margin: 20px 50px;
 }
+
 .community-block {
   margin-bottom: 100px;
 }
@@ -487,18 +496,22 @@ body {
   margin: 0 auto;
   background-color: rgb(25, 6, 41);
 }
+
 /* 1 секция футера */
 .box-features {
   margin: 10px;
 }
+
 .img-features {
   width: 100%;
 }
+
 .features-h3 {
   margin-top: 50px;
   position: relative;
   font-size: 2.2rem;
 }
+
 .features-h3::after {
   position: absolute;
   display: block;
@@ -530,6 +543,7 @@ body {
   width: 33.3%;
   margin: 5px;
 }
+
 .features-gradient:nth-child(1) {
   border-left: none;
   border-right: none;
@@ -537,6 +551,7 @@ body {
   border-bottom: 5px solid;
   border-image: linear-gradient(40deg, #0081b2, #1bbcbd) 47% 0%;
 }
+
 .features-gradient:nth-child(2) {
   border-left: none;
   border-right: none;
@@ -552,16 +567,19 @@ body {
   border-bottom: 5px solid;
   border-image: linear-gradient(40deg, #570084, #7f058d) 47% 0%;
 }
+
 /* -----------2 секция футера блок с клиентами отзывы стили в верстке повтряются модификаторы */
 .block-commets--h3 {
   margin-top: 20px;
   color: #ffff;
   font-size: 1.6rem;
 }
+
 .commemts--link {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .block-commets--p {
   color: rgba(255, 255, 255, 0.39);
 }
@@ -570,10 +588,12 @@ body {
   width: 50px;
   background: linear-gradient(40deg, #0081b2, #1bbcbd);
 }
+
 .comments-line--pink {
   width: 50px;
   background: linear-gradient(40deg, #a01080, #df0360);
 }
+
 .comments-line--purple {
   width: 50px;
   background: linear-gradient(40deg, #570084, #7f058d);
@@ -582,9 +602,11 @@ body {
 .footer-line--gradient {
   margin: 60px auto;
 }
+
 .footer--button {
   width: 130px;
 }
+
 .box-footer {
   display: flex;
   flex-wrap: wrap;
@@ -600,36 +622,124 @@ body {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.39);
 }
+
 .footer-span {
   color: #ffff;
+}
+
+@media (max-width: 800px) {
+  .header_logo {
+    margin: 10px;
+    margin: 0 auto;
+  }
+
+  .header-cotial {
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    flex-basis: 100%;
+    margin: 40px auto;
+  }
 }
 @media (max-width: 576px) {
   body {
     padding: 10px;
     background-color: #190629;
   }
+
+  .header {
+    min-height: 2300px;
+  }
+
   .header-title_h1 {
+    margin-top: 0px;
     font-size: 3.2rem;
   }
 
+  .header_logo {
+    margin-top: 10px;
+    margin: 0 auto;
+  }
+
+  .header-cotial {
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    margin: 40px auto;
+  }
+
+  .section-header-title {
+    margin-top: 150px;
+    height: 300px;
+  }
+
+  .header-title {
+    height: 300px;
+  }
+
   [class*='h2'] {
+    margin-top: 20px;
     font-size: 3rem;
   }
+
   .tools-p {
     font-size: 1.3rem;
   }
+
   .tools-box_img {
-  max-width: 40px;
-  
+    max-width: 40px;
+  }
+
+  .tool-box_p {
+    /* flex-basis: 100%; */
+    font-size: 2rem;
+  }
+
+  .tool-description_p {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .developers-title_p {
+    margin: 40px 0px;
+    font-size: 1.6rem;
+  }
+
+  .main-title_h2 {
+    margin-top: 20px;
+  }
+
+  .main-title_p {
+    margin: 20px 0px;
+    font-size: 1.6rem;
+  }
+
+  .box-eclips {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .block-offers_h3 {
+    margin-top: 10px;
+  }
+
+  .block-offers_p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
-.tool-box_p {
-  /* flex-basis: 100%; */
-  font-size: 2rem;
-}
-.tool-description_p {
-  /* padding: 30px; */
-  text-transform: lowercase;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.39);
-}
+
+.butnUp-js {
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+  cursor: pointer;
+  position: fixed;
+  z-index: 2;
+  top: 50vh;
+  right: 0vw;
+  text-transform: uppercase;
+  border-radius: 5px;
 }

@@ -66,3 +66,17 @@ $(function() {
     ],
   });
 });
+let butnUp = document.querySelector('.butnUp-js');
+
+document.addEventListener('scroll', function(e) {
+  if (window.pageYOffset > 500) {
+    butnUp.style.opacity = '1';
+  } else if (window.pageYOffset < 200) {
+    butnUp.style.opacity = '0';
+  }
+});
+
+$('.butnUp-js').on('click', function() {
+  console.log(1111);
+  $('html,body').animate({ scrollTop: 0 }, 1000);
+});
