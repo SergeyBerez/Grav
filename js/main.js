@@ -80,3 +80,25 @@ $('.butnUp-js').on('click', function() {
   console.log(1111);
   $('html,body').animate({ scrollTop: 0 }, 1000);
 });
+
+// native js code
+// let links = document.querySelectorAll('.header_li');
+// console.log(links);
+// for (let i = 0; i < links.length; i++) {
+//   links[i].addEventListener('click', function(e) {
+//     e.preventDefault();
+//     console.log(this.dataset.id);
+//     let id = document.querySelector(this.dataset.id);
+//     let coords = id.getBoundingClientRect().top;
+//     window.scrollTo(0, coords);
+//   });
+// }
+
+$('.header_li').on('click', function(e) {
+  e.preventDefault();
+  console.log($(this));
+  let attr = $(this).attr('data-id');
+  let h = $(attr).offset().top;
+  console.log(h);
+  $('html,body').animate({ scrollTop: h }, 2000);
+});
