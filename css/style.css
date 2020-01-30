@@ -3,6 +3,7 @@
   font-weight: medium;
   font-family: 'Novecento';
 }
+
 @font-face {
   src: url('../fonts/Novecento WideLight.otf');
   font-family: 'Novecento';
@@ -12,7 +13,7 @@
 html {
   font-size: 62.5%;
 }
-
+/* ======!!!дивам проставленная жесткая высота где необходимо по макету . Макет адапитива не известен , верстка мобильная сверстана самостоятельно !!! ==============*/
 /* устанавливаем  сбрасываем стили для всех тегов  */
 div {
   box-sizing: border-box;
@@ -210,9 +211,11 @@ body {
 .section-tools {
   height: 400px;
 }
+
 .tools-title {
   text-align: center;
 }
+
 .tools-h2 {
   margin-top: 130px;
   font-size: 4.8rem;
@@ -223,6 +226,7 @@ body {
   font-size: 2.2rem;
   color: rgba(255, 255, 255, 0.39);
 }
+
 /* -----------------блоки с градиентом внутри иконки */
 .tools-box {
   display: flex;
@@ -370,6 +374,7 @@ body {
   transition: 0.5s;
   background: linear-gradient(40deg, #a01080, #df0360);
 }
+
 /* ------слайдер главного блока macbook */
 .main_sliders {
   margin: 0 auto;
@@ -394,6 +399,7 @@ body {
 .block-offers {
   padding: 5px;
 }
+
 .offers-ico {
   margin-top: 40px;
   width: 50px;
@@ -494,6 +500,7 @@ body {
 .community-block {
   margin-bottom: 100px;
 }
+
 /* =============================footer секция */
 .footer {
   max-width: 2000px;
@@ -645,6 +652,7 @@ body {
     flex-basis: 100%;
     margin: 50px auto;
   }
+
   .section-header-title {
     margin-top: 150px;
     height: 400px;
@@ -653,6 +661,7 @@ body {
   .header-title {
     height: 300px;
   }
+
   .header-title_h1 {
     margin-top: 100px;
     font-size: 3.2rem;
@@ -662,6 +671,7 @@ body {
     margin: 20px 0px;
     font-size: 1.3rem;
   }
+
   [class*='h2'] {
     margin-top: 20px;
     font-size: 3rem;
@@ -685,6 +695,7 @@ body {
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 576px) {
   .header {
     min-height: 2300px;
